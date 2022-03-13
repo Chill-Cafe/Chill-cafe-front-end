@@ -1,10 +1,10 @@
 .index {
     font-family: "Montserrat", sans-serif;
-    background-image: url("img/7acBKo.jpg");
+    background-image: url("/img/7acBKo.jpg");
     background-size: cover;
   }
   .Menu{
-    background-image: url("img/background_menu.png");
+    background-image: url("/img/background_menu.png");
     background-size: cover;
   }
   .bar{
@@ -72,7 +72,7 @@ border: 1px solid #888;
 width: 100%; 
 height:700px;
 text-align: center;
-background-image: url("img/food.jpg");
+background-image: url("/img/food.jpg");
 }
 .boxout{
   margin: 200px auto; 
@@ -80,7 +80,7 @@ background-image: url("img/food.jpg");
   width: 100%; 
   height:700px;
   text-align: center;
-  background-image: url("img/food.jpg");
+  background-image: url("/img/food.jpg");
   }
 .formindex{
 margin: 200px auto; 
@@ -317,7 +317,7 @@ form .noneDisplay {
   outline: none; }
 /*ketchen*/
 .ketchen{
-  background-image: url("img/background_menu.png");
+  background-image: url("/img/background_menu.png");
 }
   .centerlist{
     text-align:center;
