@@ -48,9 +48,9 @@ app.post("/", function(req, res){
 
     User.findOne({username: Username, password: Password}, function(err, foundUser) {
         if(foundUser != null) {
-            res.sendFile(__dirname + "/restaurant.html");
+            res.sendFile(__dirname + "/public/restaurant.html");
         } else {
-            res.redirect("/");
+            res.sendFile(__dirname + "/public/login.html");
         }
     });
 });
