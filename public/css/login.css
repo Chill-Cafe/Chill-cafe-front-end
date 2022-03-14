@@ -44,6 +44,7 @@ button:hover {
     width: 30%;
     color: white;
     background-color: rgba(0, 0, 0, 0.4);
+    font-family: 'Moon Dance', cursive;
 }
 
 /* Extra style for the cancel button (red) */
