@@ -9,6 +9,7 @@ const userSchema = new mongoose.Schema({
     username: String,
     password: String
 });
+
 const orderSchema = new mongoose.Schema({
     name: String,
     table: Number,
