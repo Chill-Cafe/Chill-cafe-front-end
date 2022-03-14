@@ -58,3 +58,11 @@ app.post("/", function(req, res){
 app.listen(3000, function() {
     console.log("Server listening on port 3000");
 });
+const th = new mongoose.Schema({
+    Latte: String
+});
+const  menu = mongoose.model("user",th);
+const late = new User({
+   Latte: "Latte",
+    
+});
