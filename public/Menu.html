@@ -96,7 +96,7 @@ h2{
 </div>
 
 
-<div class="row">
+<div class="row" id="div3">
   <div class="left" style="background-color:#bbb;">
     <h2>Menu</h2>
     <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
@@ -493,10 +493,49 @@ h2{
      
     </ul>
   </div>
-  
+  <div class="background" id="div4">
+    <p class="orderlist-head">
+     <a>Orderlist</a> 
+    </p>
+    <div class="textin" >
+        <a>detail</a> 
+
+    </div>
+    
+    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="button button4">checkout</button>
+
+    <div id="id01" class="modal">
+      
+      <form class="modal-content animate" action="/action_page.php" method="post">
+          
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+           
+    
+        <div class="container">
+            <p class="checkout-head">Check out</p>
+          <div class="container1">
+              <a>detail menu</a>
+            </div>
+            </div>
+    
+        <div class="container" style="background-color:#c5b8b8">
+            <div class="smarty">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="button button7">checkout</button>
+        </div>
+        </div>
+      </form>
+    </div>
   
 
 <script>
+    var modal = document.getElementById('id01');
+
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
 function myFunction() {
   var input, filter, ul, li, a, i;
   input = document.getElementById("mySearch");
