@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Moon Dance", cursive;
+}
+
+body {
+  background-image: url("/img/background_menu.png");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.main {
+  margin: auto;
+  margin-top: 2.5in;
+  padding: 1rem;
+}
+
+.main {
+  background-color: rgb(255, 229, 190);
+  display: flex;
+  justify-content: space-between;
+  max-width: 680px;
+  width: 100%;
+  height: 250px;
+}
+
+.box h1 {
+  text-align: center;
+}
+
+.box p {
+  display: inline-block;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.box button {
+  text-align: center;
+  font-weight: bold;
+  font-size: medium;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.box2 button {
+  display: block;
+  margin: 5px 0;
+  padding: 5px 10px;
+  width: 10rem;
+  height: 3rem;
+  font-size: larger;
+  font-weight: bold;
+}
+
+input[type="checkbox"] {
+  margin: 20px;
+}
+
+footer {
+  color: white;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  font-size: larger;
+}
