@@ -2,6 +2,9 @@
     font-family: "Montserrat", sans-serif;
     background-image: url("/img/7acBKo.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
   }
   .Menu{
     background-image: url("/img/background_menu.png");
@@ -35,7 +38,38 @@
   
   
   /* Navigation Bar*/
- 
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+    border-right:1px solid #bbb;
+  }
+  
+  li:last-child {
+    border-right: none;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: #0e2544;
+  }
 
   /*title */
   #title .container-fluid {
@@ -64,6 +98,8 @@ font-family: 'Moon Dance', cursive;
 background-color: #e6b4e1;
 margin: 0% 10% 0% 10%;
 font-size:6rem;
+border: 5px solid rgb(209, 102, 102);
+
 
 }
 .boxindex{
@@ -148,16 +184,49 @@ background-color: #fcfcfc;
 
 
 .formtable{
-background-color: #ee8fee;
+ background-image: url("/img/background_menu.png");
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ background-size: 100% 100%;
 margin: 5px auto; /* 15% from the top and centered */
-border: 1px solid #888;
+border: 10px solid rgb(8, 6, 6);
 width: 80%; /* Could be more or less, depending on screen size */
 text-align: center;
+font-size: 2rem;
 }
 .button{
   text-align: right;
   
 }
+.button1{
+  margin-left :100px;
+  background-color:#0b7dda;
+  font-style: italic;
+  
+}
+.button2{
+  margin-left :100px;
+  background-color:#d3e984;
+}
+.button3{
+  margin-left :100px;
+  background-color:#ec0a0a;
+  font-style: italic;
+  font-size: 2rem;
+}
+.button4{
+  margin-left :100px;
+  background-color:#1388e7;
+  font-style: italic;
+  font-size: 2rem;
+}
+.button5{
+  margin-left :100px;
+  background-color:#11c029;
+  font-style: italic;
+  font-size: 2rem;
+}
+
 .food-type{
   text-align: right;
 }
