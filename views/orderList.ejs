@@ -15,17 +15,17 @@
         <p><%= item.name %></p>
         <p>Table <%= item.table %></p>
         <p>Total <%= item.number %> ea</p>
-        <button type="submit">Cancel</button>
+        <!-- <a href="/buttonCancel" name="button" value="<%= item._id %>"><button type="submit">Cancel</button></a>  -->
       </div>
       <input type="hidden" name="listName" value="<%= listTitle %>" />
     </form>
     <% }) %>
   </div>
   <div class="box2">
-    <button type="submit">Queue</button>
-    <button type="submit">Cookimg Menu</button>
-    <button type="submit">Done</button>
-    <button type="submit">Cancel</button>
+    <a href="/Queue"><button type="submit">Queue</button></a>
+    <a href="/Cooking"><button type="submit">Cookimg Menu</button></a>
+    <a href="/Done"><button type="submit">Done</button></a>
+    <a href="/Cancel"><button type="submit">Cancel</button></a> 
   </div>
 </div>
 

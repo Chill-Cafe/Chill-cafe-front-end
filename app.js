@@ -100,10 +100,10 @@ app.get("/Done", function(req, res){
     });
 });
 
-app.get("/Cancle", function(req, res){
-    Order.find({ status: "Cancle" }, function(err, foundItems) {
+app.get("/Cancel", function(req, res){
+    Order.find({ status: "Cancel" }, function(err, foundItems) {
         res.render("orderList", {
-            listTitle: "Cancle",
+            listTitle: "Cancel",
             newListItems: foundItems
         });
     });
@@ -131,6 +131,18 @@ app.post("/delete", function (req, res) {
         });
     }
 });
+
+// app.post("/buttonCancel", function(req, res){
+//     const checkedItemId = req.body.button;
+//     const listName = req.body.listName;
+//     Order.findByIdAndUpdate(checkedItemId, { status: "Cancel" }, function(err){
+//         if(!err) {
+//             res.redirect("/"+listName);
+//         } else {
+//             console.log(err);
+//         }
+//     });
+// });
 
 app.listen(3000, function() {
     console.log("Server listening on port 3000");
