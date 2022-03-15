@@ -1,0 +1,6 @@
+version: '3.3'
+services:
+  frontend:
+    image: jedsada31/234-deployfinal-frontend:latest
+    ports:
+      - "8080:80"
